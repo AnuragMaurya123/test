@@ -1,7 +1,8 @@
 
 export default function Hero() {
   return (
-    <div className="container">
+    <div className="layout2">
+    <div className="container ">
          <div className="landing-container ">
     <div className="content-section">
       <div className="tagline">We are The Best</div>
@@ -33,6 +34,7 @@ export default function Hero() {
         <div className="image-card image-card-5"></div>
       </div>
     </div>
+  </div>
   </div>
   </div>
   )
