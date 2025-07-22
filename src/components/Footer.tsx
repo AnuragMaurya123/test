@@ -190,7 +190,10 @@ export default function Footer() {
                 </a>
               </div>
 
-              <div className="category-column">
+             
+            </div>
+            <div className="link-column">
+            <div className="category-column">
                 <h3 className="section-title">Quick Links</h3>
                 <a href="#" className="category-link">
                   Home
