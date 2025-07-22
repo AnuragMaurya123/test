@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import Search from "./Search"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
