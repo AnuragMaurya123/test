@@ -1,29 +1,25 @@
-import { useState } from "react";
-import Search from "./Search";
+"use client"
+
+import { useState } from "react"
+import Search from "./Search"
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [search, setSearch] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [search, setSearch] = useState(false)
 
   const toggleSearch = () => {
-    setSearch(!search);
-  };
+    setSearch(!search)
+  }
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+    setIsMenuOpen(!isMenuOpen)
+  }
 
   return (
     <div className="container head">
       <div className="header">
         <div className="right">
           <div className="logo">
-            <svg
-              width="63"
-              height="39"
-              viewBox="0 0 63 39"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <svg width="63" height="39" viewBox="0 0 63 39" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M7.87545 18.3679C3.43344 17.7199 0 13.8541 0 9.22004C0 4.12989 4.12973 0 9.24394 0C12.8935 0 16.063 2.11277 17.5515 5.21018H12.6535C11.7171 4.41778 10.5406 3.96172 9.24394 3.96172C6.3147 3.96172 3.96171 6.31487 3.96171 9.22004C3.96171 12.1493 6.3147 14.5024 9.24394 14.5024C11.573 14.5024 13.5418 12.9895 14.2381 10.9008H8.93183V7.46737H18.2958C18.3921 7.89936 18.4399 8.33167 18.464 8.78773V9.22004C18.464 9.4601 18.464 9.6761 18.4399 9.89241C18.4399 10.1084 18.4162 10.3244 18.3921 10.5407L18.3439 10.8286L18.3199 10.9008C17.5515 15.1986 13.758 18.4641 9.24394 18.4641C8.76381 18.4641 8.33167 18.4401 7.87545 18.3679Z"
                 fill="#1F1B1C"
@@ -58,7 +54,7 @@ export default function Header() {
               ></path>
             </svg>
           </div>
-          <Search />
+         
         </div>
         <div className="left">
           <div className="buttons">
@@ -78,13 +74,7 @@ export default function Header() {
             </button>
 
             <button className="menubutton" onClick={toggleMenu}>
-              <svg
-                width="24"
-                height="22"
-                viewBox="0 0 24 22"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+              <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
@@ -93,6 +83,8 @@ export default function Header() {
                 ></path>
               </svg>
             </button>
+
+            {isMenuOpen && <div className="menu-overlay"></div>}
             <div className={`menu ${isMenuOpen ? "open" : ""}`}>
               <button className="closebutton" onClick={toggleMenu}>
                 <svg
@@ -108,13 +100,7 @@ export default function Header() {
               <div className="">
                 <div className="menu-content">
                   <div className="logo">
-                    <svg
-                      width="63"
-                      height="39"
-                      viewBox="0 0 63 39"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="63" height="39" viewBox="0 0 63 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M7.87545 18.3679C3.43344 17.7199 0 13.8541 0 9.22004C0 4.12989 4.12973 0 9.24394 0C12.8935 0 16.063 2.11277 17.5515 5.21018H12.6535C11.7171 4.41778 10.5406 3.96172 9.24394 3.96172C6.3147 3.96172 3.96171 6.31487 3.96171 9.22004C3.96171 12.1493 6.3147 14.5024 9.24394 14.5024C11.573 14.5024 13.5418 12.9895 14.2381 10.9008H8.93183V7.46737H18.2958C18.3921 7.89936 18.4399 8.33167 18.464 8.78773V9.22004C18.464 9.4601 18.464 9.6761 18.4399 9.89241C18.4399 10.1084 18.4162 10.3244 18.3921 10.5407L18.3439 10.8286L18.3199 10.9008C17.5515 15.1986 13.758 18.4641 9.24394 18.4641C8.76381 18.4641 8.33167 18.4401 7.87545 18.3679Z"
                         fill="#1F1B1C"
@@ -168,13 +154,7 @@ export default function Header() {
                     </li>
                     <li>
                       <span>
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M20.4898 7.51947C20.4841 7.49311 20.4841 7.46583 20.4898 7.43947C20.485 7.41639 20.485 7.39255 20.4898 7.36947V7.27947L20.4298 7.12947C20.4054 7.08854 20.3751 7.05147 20.3398 7.01947L20.2498 6.93947H20.1998L16.2598 4.44947L12.5398 2.14947C12.4538 2.0812 12.3553 2.03026 12.2498 1.99947H12.1698C12.0804 1.98455 11.9892 1.98455 11.8998 1.99947H11.7998C11.6837 2.02516 11.5723 2.06904 11.4698 2.12947L3.99982 6.77947L3.90982 6.84947L3.81982 6.92947L3.71982 6.99947L3.66982 7.05947L3.60982 7.20947V7.29947V7.35947C3.60011 7.42578 3.60011 7.49316 3.60982 7.55947V16.2895C3.60948 16.4594 3.65246 16.6266 3.7347 16.7754C3.81693 16.9241 3.93571 17.0494 4.07982 17.1395L11.5798 21.7795L11.7298 21.8395H11.8098C11.979 21.8931 12.1606 21.8931 12.3298 21.8395H12.4098L12.5598 21.7795L19.9998 17.2095C20.1439 17.1194 20.2627 16.9941 20.345 16.8454C20.4272 16.6966 20.4702 16.5294 20.4698 16.3595V7.62947C20.4698 7.62947 20.4898 7.55947 20.4898 7.51947ZM11.9998 4.16947L13.7798 5.26947L8.18982 8.72947L6.39982 7.62947L11.9998 4.16947ZM10.9998 19.1695L5.49982 15.8095V9.41947L10.9998 12.8195V19.1695ZM11.9998 11.0595L10.0898 9.90947L15.6798 6.43947L17.5998 7.62947L11.9998 11.0595ZM18.4998 15.7795L12.9998 19.1995V12.8195L18.4998 9.41947V15.7795Z"
                             className="fill-[#71839B] group-hover:fill-secondary"
@@ -231,12 +211,12 @@ export default function Header() {
       <div className={search ? "showsearch" : "smallsearch"}>
         <div className="search2">
           <button>
-            <img src="./magnifying-glass.png" alt="Search icon" />
+            <img src="/magnifying-glass.png" alt="Search icon" />
             <span className="">Search</span>
           </button>
           <input type="text" placeholder="Search Here..." />
         </div>
       </div>
     </div>
-  );
+  )
 }
