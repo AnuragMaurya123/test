@@ -161,10 +161,10 @@ export default function Footer() {
         </div>
 
         <div className="footer-links-row">
+        <h3 className="section-title">Categories</h3>
           <div className="categories-section">
-            <h3 className="section-title">Categories</h3>
-            <div className="categories-grid">
-              <div className="category-column">
+              <div className="category">
+                <div className="category-column">
                 <a href="#" className="category-link">
                   Artists
                 </a>
@@ -186,8 +186,8 @@ export default function Footer() {
                 <a href="#" className="category-link">
                   Software Engineer
                 </a>
-              </div>
-              <div className="category-column">
+                </div>
+                <div className="category-column">
                 <a href="#" className="category-link">
                   Chef
                 </a>
@@ -209,8 +209,8 @@ export default function Footer() {
                 <a href="#" className="category-link">
                   Writers
                 </a>
-              </div>
-              <div className="category-column">
+                </div>
+                <div className="category-column">
                 <a href="#" className="category-link">
                   Civil Engineers
                 </a>
@@ -229,10 +229,11 @@ export default function Footer() {
                 <a href="#" className="category-link">
                   Social Media Specialist
                 </a>
+                </div>
               </div>
-            </div>
           </div>
-
+        </div>
+        <div className="footer-menu-option2">
           <div className="links-section">
             <h3 className="section-title">Quick Links</h3>
             <a href="#" className="footer-link">
@@ -273,7 +274,7 @@ export default function Footer() {
               Contact us
             </a>
           </div>
-        </div>
+          </div>
 
         <div className="footer-bottom">
           <div className="footer-bottom-left">
