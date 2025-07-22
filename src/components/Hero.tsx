@@ -4,7 +4,7 @@ export default function Hero() {
     <div className="container ">
       <div className="landing-container">
         <div className="content-section">
-          <div className="tagline">AI-Powered Creative Platform</div>
+          <div className="tagline">We are The Best</div>
           <h1 className="main-heading">
           Graybook - Where AI meets every <span className="highlight">profession.</span>
           </h1>
