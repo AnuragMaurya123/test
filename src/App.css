@@ -30,7 +30,7 @@ ul {
   background-image: url("https://graybook.ai/images/common/left-gradient.svg");
   background-repeat: no-repeat;
   background-size: 100vh 100vh;
-  background-position: right center; 
+  background-position: right center;
 }
 
 .container {
@@ -392,7 +392,7 @@ ul {
   margin-bottom: 8px;
   position: relative;
   width: fit-content;
-  
+
 }
 
 
@@ -826,7 +826,7 @@ ul {
   padding: 50px;
   width: 50%;
   transition: transform 0.3s ease;
- 
+
 }
 
 .image-column {
@@ -1032,11 +1032,7 @@ ul {
 
 
 @media (max-width: 1024px) {
-  .landing-container {
-    flex-direction: column;
-    gap: 40px;
-    padding: 20px;
-  }
+
 
   .layout {
     background-image: none;
@@ -1048,6 +1044,12 @@ ul {
 
   .landing-container {
     align-items: flex-start;
+  }
+
+  .landing-container {
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 30px;
   }
 
   .main-heading {
@@ -1089,6 +1091,7 @@ ul {
   .header {
     gap: 15px;
   }
+
   .content-section {
     max-width: 100%;
   }
@@ -1114,15 +1117,23 @@ ul {
   .left {
     order: 3;
   }
+
+  .landing-container {
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 30px;
+  }
 }
 
 @media (max-width: 768px) {
   .header {
     padding: 15px 10px;
   }
+
   .content-section {
     max-width: 100%;
   }
+
   .visual-section-container {
     display: none;
   }
@@ -1185,6 +1196,12 @@ ul {
     gap: 20px;
   }
 
+  .landing-container {
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 30px;
+  }
+
   .footer-links {
     flex-direction: column;
     gap: 30px;
@@ -1209,7 +1226,8 @@ ul {
   }
 
   .landing-container {
-    padding: 60px 20px;
+    padding-left: 40px;
+    padding-right: 40px;
     gap: 30px;
   }
 }
@@ -1218,9 +1236,11 @@ ul {
   .container {
     padding: 0 12px;
   }
+
   .content-section {
     max-width: 100%;
   }
+
   .visual-section-container {
     display: none;
   }
@@ -1231,6 +1251,13 @@ ul {
 
   .header {
     padding: 12px 8px;
+
+  }
+
+  .landing-container {
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 30px;
   }
 
   .search {
@@ -1372,9 +1399,17 @@ ul {
   .header {
     padding: 10px 4px;
   }
+
+  .landing-container {
+    padding-left: 40px;
+        padding-right: 40px;
+    gap: 30px;
+  }
+
   .content-section {
     max-width: 100%;
   }
+
   .layout {
     background-image: none;
   }
@@ -1408,6 +1443,7 @@ ul {
   .layout {
     background-image: none;
   }
+
   .content-section {
     max-width: 100%;
   }
