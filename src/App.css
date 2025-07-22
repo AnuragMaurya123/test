@@ -15,7 +15,7 @@ ul {
   height: auto;
   vertical-align: top;
   background-color: #fff;
-  background-image: url("./circles-light.svg");
+  background-image: url("../public/circles-light.svg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: 60%;
@@ -464,7 +464,7 @@ height: auto;
   padding: 60px 0 0;
   position: relative;
   overflow: hidden;
-  background-image: url("./bg-footer.svg");
+  background-image: url("../public/bg-footer.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
