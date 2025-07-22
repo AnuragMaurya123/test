@@ -19,7 +19,7 @@ ul {
   height: auto;
   vertical-align: top;
   background-color: #fff;
-  background-image: url("../dist/circles-light.svg");
+  background-image: url("https://graybook.ai/images/common/circles-light.svg");
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: top;
@@ -504,7 +504,7 @@ ul {
   padding: 60px 0 0;
   position: relative;
   overflow: hidden;
-  background-image: url("../dist/bg-footer.svg");
+  background-image: url("https://graybook.ai/images/bg-footer.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
